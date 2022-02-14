@@ -5,10 +5,10 @@ name: Python package
 
 on:
   push:
-    branches: [ main, Device_Class ]
+    branches: [ main ]
     
   pull_request:
-    branches: [ main, Device_Class ]
+    branches: [ main ]
 
 jobs:
   build:
