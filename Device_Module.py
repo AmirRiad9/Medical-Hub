@@ -1,44 +1,38 @@
-#Device Module
-
+# Device Module
+from Device_Class import Device
 import json
 
-#set values
-with open('Temperature.json') as f:
-    data = json.load(f)
+
+def get_device(file_name):
+    # set values
+    with open(file_name) as f:
+        data = json.load(f)
+
+    d1 = Device()
+
+    for key, value in data.items():
+        if key == "Device_id":
+            d1.d_id = data[key]
+        elif key == "Device_Type":
+            d1.d_t = data[key]
+        elif key == "Unit":
+            d1.u = data[key]
+        elif key == "DOP":
+            d1.dop = data[key]
+        elif key == "MAC_Address":
+            d1.mac = data[key]
+        elif key == "User_id":
+            d1.u_id = data[key]
+        elif key == "Framework_v":
+            d1.frame = data[key]
+        elif key == "Software_v":
+            d1.soft = data[key]
+
+    with open('Devices_added.txt', 'w') as f:
+        f.write(str(d1))
+    
 
 
 
 
-user_pref = str(input("Would you like to enter the Temperature, Blood Pressure, Pulse, Oxygen Level, Weight or "
-                      "Glucose Level:"))
-DOP = str(input("Please enter Date of Purchase using (dd-mm-yyy): "))
-MAC = str(input("Please enter the MAC Address of the device using (xx-xx-xx-xx-xx): "))
-User_id = int(input("Please enter your user_id: "))
-frame_v = float(input("Please enter the Framework version: "))
-soft_v = float(input("Please enter the Software version: "))
-
-
-'''for device in data['Devices']:
-    print(device['Device_Type'], device['Device_id']) '''
-
-
-if user_pref == 'Temperature':
-    new_values_temp = {
-            "DOP": DOP,
-            "MAC_Address": MAC,
-            "User_id": User_id,
-            "Framework_v": frame_v,
-            "Software_v": soft_v
-         }
-    for key, value in new_values_temp.items():
-        if key in data:
-            data[key].append(value)
-
-
-with open('Temperature.json', 'w') as f:
-    json.dump(data, f, indent=2)
-
-
-
-
-
+get_device('Device.json')
