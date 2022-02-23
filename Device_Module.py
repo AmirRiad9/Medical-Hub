@@ -30,9 +30,6 @@ def get_device(file_name):
 
     with open('Devices_added.txt', 'w') as f:
         f.write(str(d1))
-    
-
-
 
 
 get_device('Device.json')
