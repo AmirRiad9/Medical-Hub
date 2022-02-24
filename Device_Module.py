@@ -28,8 +28,13 @@ def get_device(file_name):
         elif key == "Software_v":
             d1.soft = data[key]
 
+
+
     with open('Devices_added.txt', 'w') as f:
         f.write(str(d1))
+
+    return d1
+
 
 
 get_device('Device.json')
