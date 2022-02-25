@@ -28,13 +28,21 @@ def get_device(file_name):
         elif key == "Software_v":
             d1.soft = data[key]
 
-
+    device_added = {
+        "Device_id": d1.d_id,
+        "Device_Type": d1.d_t,
+        "Unit": d1.u,
+        "DOP": d1.dop,
+        "MAC_Address": d1.mac,
+        "User_id": d1.u_id,
+        "Framework_v": d1.frame,
+        "Software_v": d1.soft
+    }
 
     with open('Devices_added.txt', 'w') as f:
         f.write(str(d1))
 
-    return d1
-
+    return device_added
 
 
 get_device('Device.json')

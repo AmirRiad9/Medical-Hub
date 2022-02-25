@@ -1,4 +1,3 @@
-from Device_Module import get_device
 from Device_Class import Device
 
 
@@ -17,13 +16,13 @@ output_check_frame = 2.34
 
 
 def test_device():
-    output = get_device(filename)
+    output = d2.get_device(filename)
 
-    assert output.d_t == output_check_dt
-    assert output.soft == output_check_soft
-    assert output.d_id == output_check_did
-    assert output.u == output_check_unit
-    assert output.dop == output_check_dop
-    assert output.mac == output_check_mac
-    assert output.u_id == output_check_uid
-    assert output.frame == output_check_frame
+    assert output["Device_Type"] == output_check_dt
+    assert output["Software_v"] == output_check_soft
+    assert output["Device_id"]== output_check_did
+    assert output["Unit"] == output_check_unit
+    assert output["DOP"] == output_check_dop
+    assert output["MAC_Address"] == output_check_mac
+    assert output["User_id"] == output_check_uid
+    assert output["Framework_v"] == output_check_frame
