@@ -1,10 +1,34 @@
 {
-  "Device_id": 1,
-  "Device_Type": "Thermometer",
-  "Unit": "F",
-  "DOP": "28-04-1999",
-  "MAC_Address": "00-14-13-24-25-12",
-  "User_id":12,
-  "Framework_v": 2.34,
-  "Software_v": 4.0
+    "Devices": [
+        {
+            "Device_id": 1,
+            "Device_Type": "Thermometer",
+            "Unit": "F",
+            "DOP": "28-04",
+            "MAC_Address": "00x00",
+            "User_id": "123",
+            "Framework_v": "3.0",
+            "Software_v": "3.0"
+        },
+        {
+            "Device_id": 2,
+            "Device_Type": "Thermometer",
+            "Unit": "F",
+            "DOP": "28-05",
+            "MAC_Address": "00x00",
+            "User_id": "123",
+            "Framework_v": "3.0",
+            "Software_v": "3.0"
+        },
+        {
+            "Device_id": 4,
+            "Device_Type": "Scale",
+            "Unit": "F",
+            "DOP": "28-05",
+            "MAC_Address": "00x00",
+            "User_id": "123",
+            "Framework_v": "3.0",
+            "Software_v": "3.0"
+        }
+    ]
 }
