@@ -1,4 +1,6 @@
-{
+import inventory_d as inv
+
+output_check = {
     "Devices": [
         {
             "Device_id": 21,
@@ -11,3 +13,7 @@
         }
     ]
 }
+
+def test_input():
+    output = inv.add_device(21, "Thermometer", "F", "28-01-2022", 123, 3.0, 3.0)
+    assert output == output_check
