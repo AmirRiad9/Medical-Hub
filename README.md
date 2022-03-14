@@ -1,19 +1,68 @@
 # Medical-Hub
 A platform that patients and medical professionals can use to book, get notifications, leave messages, store their medical data and look up their history. 
 
-The Device_Module uses the Device.json file, gets the information and outputs the values in the Devices_added.txt file. To call the API use the function that is in the Device_Module file, it is called get_data() and takes in one argument which is the .json file to be used, for this example the function is called as follows: get_data('Device.json').
-
-The synntax for the Device.json file is as follows:
+The Device_Module uses the device.json file as a "Database" to test if the functions in the api are working correctly. The first thing users need to do is open the Device_Interface.py file and import the inventory file as inv using this code import inventory_d as inv. This api has 3 main functions that are being used add, get, and delete. The add_device function takes 7 input arguments, add_device(device_id, device_type, unit, date of purchase, user_id (that used the device), framework version and software version), after calling this function in the device_interface as inv.add_device(2, "Thermometer", "F", "28-05-2022", 123, 3.0, 3.0), first the function checks that all fields are satisifed and are of the correct type then adds it to the "database". The function will also check if the device id has been used before in the databse if it is, then it will return a meesage that the device id is being used and the data will not be added into the database. After calling the functinon and passing all the requirements the Device.json file will look as follows:
 
 {
-  "Device_id": 1,
-  "Device_Type": "Thermometer",
-  "Unit": "F",
-  "DOP": "28-04-1999",
-  "MAC_Address": "00-14-13-24-25-12",
-  "User_id":12,
-  "Framework_v": 2.34,
-  "Software_v": 4.0
+    "Devices": [
+        {
+            "Device_id": 2,
+            "Device_Type": "Thermometer",
+            "Unit": "F",
+            "DOP": "28-05-2022",
+            "User_id": 123,
+            "Framework_v": 3.0,
+            "Software_v": 3.0
+        }
+    ]
 }
 
-The keys are very important they are all case-sensitive please do not change or else the API will not work correctly! The Device_id takes in an integer, the User_id also takes an integer and both the Framework_v and the software_v take in a float (an integer would also work it would just add a .0 in the end, so if the user puts 4 it will become 4.0). 
+if we add another device using the same function, it will add onto the database for example if we call inv.add_device(4, "Scale", "F", "29-05-2022", 123, 3.0, 3.0)
+the Device.json file will change accordingly:
+
+{
+    "Devices": [
+        {
+            "Device_id": 2,
+            "Device_Type": "Thermometer",
+            "Unit": "F",
+            "DOP": "28-05-2022",
+            "User_id": 123,
+            "Framework_v": 3.0,
+            "Software_v": 3.0
+        },
+        {
+            "Device_id": 4,
+            "Device_Type": "Scale",
+            "Unit": "F",
+            "DOP": "29-05-2022",
+            "User_id": 123,
+            "Framework_v": 3.0,
+            "Software_v": 3.0
+        }
+    ]
+}
+
+Users can also get device information by using the device_id it has to be a valid ID that is in the "databse" or else a message will tell the user that the device id that has been entered is invalid. for example if I want to get the information associated with device id 2, users could do that by calling inv.get_device(2) and the output will be as follows:
+
+{'Device_id': 2, 'Device_Type': 'Thermometer', 'Unit': 'F', 'DOP': '28-05-2022', 'User_id': 123, 'Framework_v': 3.0, 'Software_v': 3.0}
+
+Also, if users want to delete a device, the function to do so is delete_device, so if a user wants to delete device 2 the sytanx should be inv.delete_device(2) and the new Device.json file will look as follows:
+
+{
+    "Devices": [
+        {
+            "Device_id": 4,
+            "Device_Type": "Scale",
+            "Unit": "F",
+            "DOP": "29-05-2022",
+            "User_id": 123,
+            "Framework_v": 3.0,
+            "Software_v": 3.0
+        }
+    ]
+}
+
+
+
+
