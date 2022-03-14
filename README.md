@@ -1,19 +1,19 @@
 # Medical-Hub
-A platform that patients and medical professionals can use to book, get notifications, leave messages, store their medical data and look up their history. 
 
-The Device_Module uses the Device.json file, gets the information and outputs the values in the Devices_added.txt file. To call the API use the function that is in the Device_Module file, it is called get_data() and takes in one argument which is the .json file to be used, for this example the function is called as follows: get_data('Device.json').
-
-The synntax for the Device.json file is as follows:
+I used Django to create a restful api system, and the database being used is sql. The project is hosted on aws using an ubuntu server. the public ip address is 44.203.151.18:8000, in order to view the devices in the database use 44.203.151.18:8000/Device this will show all the devices. To get the device using the device id users can use the exact link but add the device id after /Device for example if I wanted to see the details of the device using device id 1 then it would be as follows --> 44.203.151.18:8000/Device/1. If the user wants to delete device then first get the device using the device id and click on the top left red button called delete. If users want to patch anything they will use the same url to get the device they want to patch and change the information at the bottom in the text box the hit patch. In order to add a device users should go to 44.203.151.18:8000/Device scroll down to the bottom, users will see this:
 
 {
-  "Device_id": 1,
-  "Device_Type": "Thermometer",
-  "Unit": "F",
-  "DOP": "28-04-1999",
-  "MAC_Address": "00-14-13-24-25-12",
-  "User_id":12,
-  "Framework_v": 2.34,
-  "Software_v": 4.0
+    "device_type": "",
+    "unit": "",
+    "dop": null,
+    "user_id": null,
+    "framework_version": null,
+    "software_version": null
 }
 
-The keys are very important they are all case-sensitive please do not change or else the API will not work correctly! The Device_id takes in an integer, the User_id also takes an integer and both the Framework_v and the software_v take in a float (an integer would also work it would just add a .0 in the end, so if the user puts 4 it will become 4.0). 
+fill the required fields accordingly and hit post. Important note: the dop syntax should be like this --> "yyyy-mm-dd"
+
+There is also a chat room the url for it is http://44.203.151.18:8000/chat/ users then enter the "room" they want to enter and they can chat together. For the use of doctors, and patients each doctor should have his own key that is shared with patients and then they can enter the same room using the key provided where they can chat securely.
+
+
+
