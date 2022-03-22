@@ -5,7 +5,10 @@ name: Python package
 
 on:
   push:
-    branches: [ main, Device_Module ]
+
+    branches: [ main ]
+    
+
   pull_request:
     branches: [ main ]
 
