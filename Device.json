@@ -1,0 +1,13 @@
+{
+    "Devices": [
+        {
+            "Device_id": 21,
+            "Device_Type": "Thermometer",
+            "Unit": "F",
+            "DOP": "28-01-2022",
+            "User_id": 123,
+            "Framework_v": 3.0,
+            "Software_v": 3.0
+        }
+    ]
+}
