@@ -34,6 +34,7 @@ ALLOWED_HOSTS = ['*']
 INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'devices',
+    'relations.apps.RelationsConfig',
     'channels',
     'rest_framework',
     'django.contrib.admin',

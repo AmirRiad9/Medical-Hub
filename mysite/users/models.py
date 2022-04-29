@@ -6,7 +6,7 @@ from django.db import models
 
 
 class Users(models.Model):
-    user_id = models.IntegerField(primary_key=True)
+    user_id = models.AutoField(primary_key=True)
     first_name = models.CharField(max_length=60)
     last_name = models.CharField(max_length=60)
     gender = models.CharField(max_length=60)
