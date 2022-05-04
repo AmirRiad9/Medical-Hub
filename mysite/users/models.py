@@ -20,6 +20,7 @@ class Users(models.Model):
     medical_history = models.CharField(max_length=256)
     medical_condition = models.CharField(max_length=256)
     emergency_contact_number = models.IntegerField()
+    email = models.CharField(max_length=60)
 
     def __str__(self):
         return self.first_name

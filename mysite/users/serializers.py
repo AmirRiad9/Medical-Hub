@@ -9,4 +9,4 @@ class UsersSerializer(serializers.HyperlinkedModelSerializer):
         model = Users
         fields = ('user_id', 'first_name', 'last_name', 'gender', 'dob', 'contact_number', 'role_id', 'address',
                   'billing', 'allergies', 'insurance_id', 'medical_history', 'medical_condition',
-                  'emergency_contact_number')
+                  'emergency_contact_number','email')
