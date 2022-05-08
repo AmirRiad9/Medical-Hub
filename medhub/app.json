@@ -17,6 +17,8 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "com.companyname.appname",
+
       "supportsTablet": true
     },
     "android": {
