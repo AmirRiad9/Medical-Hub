@@ -39,7 +39,7 @@ expo start
 Firebase is used for authentication. Users have to enter email and password and click register (1). Users will be redirected to the "User Details" page in order to complete registration (2). After clicking submit users will be redirected to the login page where they can log in with the account created.
 
 [1]
-<img width="500" height ="1000" alt="Screen Shot 2022-05-08 at 3 11 39 PM" src="https://user-images.githubusercontent.com/60357207/167312472-c761e66e-7782-4281-8dea-8c0892a4f1a3.png">
+<img width="500" height ="800" alt="Screen Shot 2022-05-08 at 3 11 39 PM" src="https://user-images.githubusercontent.com/60357207/167312472-c761e66e-7782-4281-8dea-8c0892a4f1a3.png">
 
 [2]
 <img width="500" height ="1000" alt="Screen Shot 2022-05-08 at 3 11 39 PM" src="https://user-images.githubusercontent.com/60357207/167312528-ad5498ee-7b0e-4899-aec7-29031dc8db04.png">
