@@ -42,26 +42,26 @@ Firebase is used for authentication. Users have to enter email and password and 
 <img width="400" height ="750" alt="Screen Shot 2022-05-08 at 3 11 39 PM" src="https://user-images.githubusercontent.com/60357207/167312472-c761e66e-7782-4281-8dea-8c0892a4f1a3.png">
 
 [2]
-<img width="500" height ="1000" alt="Screen Shot 2022-05-08 at 3 11 39 PM" src="https://user-images.githubusercontent.com/60357207/167312528-ad5498ee-7b0e-4899-aec7-29031dc8db04.png">
+<img width="400" height ="750" alt="Screen Shot 2022-05-08 at 3 11 39 PM" src="https://user-images.githubusercontent.com/60357207/167312528-ad5498ee-7b0e-4899-aec7-29031dc8db04.png">
 
 * Medical Personnel
 Depending on the #role which is [Doctor, Nurse, Patient], each role corresponds to a #role_id which is stored in the database, Doctor corresponds to "1", Nurse to "2" and Patient to "3". Medical Personnel will be redirected to a page where their patients are listed [3]. Both Nurses and Doctors have the option to add a patient to their registry but in order for a Nurse to add a patient, the patient first need to be assigned to a doctor [4]. Medical Personnel can also add users to the database by clicking on "Add User" and filling the corresponding form [5].
 
 [3]
-<img width="500" height ="1000" alt="Screen Shot 2022-05-08 at 3 11 39 PM" src="https://user-images.githubusercontent.com/60357207/167312948-a3975f1b-7409-40b2-a1f9-33dc2a54cf7f.png">
+<img width="400" height ="750" alt="Screen Shot 2022-05-08 at 3 11 39 PM" src="https://user-images.githubusercontent.com/60357207/167312948-a3975f1b-7409-40b2-a1f9-33dc2a54cf7f.png">
 
 [4]
-<img width="500" height ="1000" alt="Screen Shot 2022-05-08 at 3 11 39 PM" src="https://user-images.githubusercontent.com/60357207/167313078-12646467-7bea-41c7-8abe-4e09719c2d40.png">
+<img width="400" height ="750" alt="Screen Shot 2022-05-08 at 3 11 39 PM" src="https://user-images.githubusercontent.com/60357207/167313078-12646467-7bea-41c7-8abe-4e09719c2d40.png">
 
 [5]
-<img width="500" height ="1000" alt="Screen Shot 2022-05-08 at 3 11 39 PM" src="https://user-images.githubusercontent.com/60357207/167313171-68f2d299-5357-4e6e-bd17-34257b7428df.png">
+<img width="400" height ="750" alt="Screen Shot 2022-05-08 at 3 11 39 PM" src="https://user-images.githubusercontent.com/60357207/167313171-68f2d299-5357-4e6e-bd17-34257b7428df.png">
 
 
 * Patients 
 Patients will log in the same way as the medical personnel but they will be redirected to another page where their doctor is displayed [6]. Patients can also view all nurses available by clicking "View all nurses available" [6].
 
 [6]
-<img width="500" height ="1000" alt="Screen Shot 2022-05-08 at 3 11 39 PM" src="https://user-images.githubusercontent.com/60357207/167313595-54cbc8e8-1ab3-436b-8c50-0a36ee6ae6c6.png">
+<img width="400" height ="750" alt="Screen Shot 2022-05-08 at 3 11 39 PM" src="https://user-images.githubusercontent.com/60357207/167313595-54cbc8e8-1ab3-436b-8c50-0a36ee6ae6c6.png">
 
 
 
