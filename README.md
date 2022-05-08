@@ -8,7 +8,7 @@ Django was used to develop a RESTful API that was hosted on AWS using an EC2 ins
 
 <img width="1000" height ="500" alt="Screen Shot 2022-05-08 at 3 11 20 PM" src="https://user-images.githubusercontent.com/60357207/167312143-a7edba1f-4cc6-4fe4-af36-80d54db68992.png">
 
-<img width="1440" alt="Screen Shot 2022-05-08 at 3 11 39 PM" src="https://user-images.githubusercontent.com/60357207/167312191-dd295a6f-7c32-485c-a7ce-d96d837adca0.png">
+<img width="1000" height ="500" alt="Screen Shot 2022-05-08 at 3 11 39 PM" src="https://user-images.githubusercontent.com/60357207/167312191-dd295a6f-7c32-485c-a7ce-d96d837adca0.png">
 
 
 Users can run http://localhost/doc/ ---> for more information
@@ -39,7 +39,7 @@ expo start
 Firebase is used for authentication. Users have to enter email and password and click register (1). Users will be redirected to the "User Details" page in order to complete registration (2). After clicking submit users will be redirected to the login page where they can log in with the account created.
 
 [1]
-![simulator_screenshot_42A49DD3-9B91-4AFC-8D95-07328D78F813](https://user-images.githubusercontent.com/60357207/167312472-c761e66e-7782-4281-8dea-8c0892a4f1a3.png)
+![100x200](https://user-images.githubusercontent.com/60357207/167312472-c761e66e-7782-4281-8dea-8c0892a4f1a3.png)
 
 [2]
 ![Simulator Screen Shot - iPhone 13 - 2022-05-08 at 15 28 21](https://user-images.githubusercontent.com/60357207/167312528-ad5498ee-7b0e-4899-aec7-29031dc8db04.png)
