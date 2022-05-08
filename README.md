@@ -6,7 +6,7 @@ A cross platform application that stores patients, doctors and nurses. In additi
 
 Django was used to develop a RESTful API that was hosted on AWS using an EC2 instance but it is currently stopped for security reasons, the database used is sqlite. There are four endpoints; Users, Devices, Relations and Chat. Medical Hub only uses two of these enpoints which are Users and Relations. Here is the documentation for the API using swagger:
 
-<img width="150" height ="200" alt="Screen Shot 2022-05-08 at 3 11 20 PM" src="https://user-images.githubusercontent.com/60357207/167312143-a7edba1f-4cc6-4fe4-af36-80d54db68992.png">
+<img width="800" height ="800" alt="Screen Shot 2022-05-08 at 3 11 20 PM" src="https://user-images.githubusercontent.com/60357207/167312143-a7edba1f-4cc6-4fe4-af36-80d54db68992.png">
 
 <img width="1440" alt="Screen Shot 2022-05-08 at 3 11 39 PM" src="https://user-images.githubusercontent.com/60357207/167312191-dd295a6f-7c32-485c-a7ce-d96d837adca0.png">
 
